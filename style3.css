@@ -1,0 +1,153 @@
+body {
+  background-image: url("./images/bright-woodseamless-smaller.jpg"); 
+  background-color: #ccffd9;
+  background-repeat: repeat;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+ul {
+  padding: 0 10px;
+  text-align: center;
+}
+
+li {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 80px;
+  margin: 20px;
+  letter-spacing: 2px;
+}
+
+li a:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+footer {
+  background-color: #FFF;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 15px;
+  color: #ffb399; 
+  text-transform: uppercase;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+div {
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 100;
+}
+
+img {
+  z-image: 10;
+}
+
+.logo {
+  font-family: 'Shrikhand', cursive;
+  background-color: #FFF;
+  font-size: 45px;
+  text-transform: lowercase;
+  color: #ffb399;
+  display: block;
+  width: 300px;
+  height: 150px;
+  z-index: 9;
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+}
+
+.center {
+  position: fixed;
+  width: 250px;
+  height: 125px;
+  top: 66px;
+  left: 50%;
+  margin-left: -125px;
+}
+
+.space {
+  width: 300px;
+}
+
+.omOss {
+
+}
+
+.tjanster {
+  
+}
+
+.portfolio {
+  
+}
+
+.kontakt {
+  
+}
+
+.test {
+  text-align: center;
+  width: 700px;
+  padding: 200px 50px 700px 50px;
+  margin: 0 auto;
+  font-family: 'Arial', Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
