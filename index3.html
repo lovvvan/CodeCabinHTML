@@ -34,6 +34,16 @@
           } // End if
         });
       });
+
+      /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      }
+
+/* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      }
   </script>
 </head>
 <body>
@@ -49,6 +59,26 @@
     </ul>
     <img class="center" src="images/sunlogo.jpg" alt="Code Cabin">
   </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#omOss">om oss</a>
+    <a href="#tjanster">tjänster</a>
+    <a href="#portfolio">portfolio</a>
+    <a href="#kontakt">kontakt</a>
+  </div> 
+
+  <span onmouseover="openNav()" class="openbtn" >Visa meny</span>
+
+  <div id="meny">
+    <ul>
+      <li> Om oss </li>
+      <li> Tjänster </li>
+      <li> Portfolio </li>
+      <li> Kontakt </li>
+    </ul>  
+  </div>
+   
 
   <div class="omOss test" id="omOss">
     <h1>om oss</h1>
