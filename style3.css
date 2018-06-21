@@ -120,20 +120,21 @@ img {
 }
 
 .tjanster-test p {
-  text-align: center;
+  text-align: left;
   width: 500px;
   margin: 0 auto;
   display: block;
   transform: rotate(-9deg); /* Dont change here, change degrees of .tjanster-test instead */
 }
 
+/*
 .eraser {
   display: block;
   width: 120px;
   margin: 0 auto;
   position: relative;
   left: 300px;
-}
+}*/
 
 
 .portfolio {
