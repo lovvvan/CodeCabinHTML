@@ -180,7 +180,6 @@ figure.rotate_left {
 
 
 
-
 /* The side navigation menu */
 .sidenav {
     height: 200px; /* 100% Full-height */
@@ -240,6 +239,7 @@ figure.rotate_left {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
 
 
 
