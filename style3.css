@@ -3,6 +3,7 @@ body {
   background-color: #ccffd9;
   background-repeat: repeat;
   margin: 0 auto;
+  font-family: 'Varela Round', sans-serif;
 }
 
 header {
@@ -95,6 +96,8 @@ img {
 }*/
 
 article {
+  background-color: hsla(0, 0%, 99%, 1);
+  box-shadow: 5px 8px 18px hsla(0, 0%, 0%, 0.38);
   text-align: center;
   width: 700px;
   padding: 50px 50px 50px 50px;
@@ -105,14 +108,42 @@ article {
   font-weight: 100;
 }
 
+div.pictures {
+  width: 800px;
+  margin: 0 auto;
+}
+
+figure.polaroid {
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 8px 8px 5px #aaaaaa;
+}
+
+figure.rotate_right {
+    float: right;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+figure.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+
 
 .omOss {
-  background-color: hsla(0, 0%, 81%, 0.75);
   margin-top: 200px;
 }
 
 .tjanster{
   background-image: url("./images/notebooksmaller.png");
+  background-color: transparent;
+  box-shadow: 0 0;
   background-repeat: no-repeat;
   background-position: center;
   transform: rotate(8deg); /* Rotates the entire block with the text */
@@ -120,7 +151,7 @@ article {
   height: 700px;
   margin: 0 auto;
   display: inline-block;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Indie Flower', sans-serif;
   font-size: 22px;
 }
 
