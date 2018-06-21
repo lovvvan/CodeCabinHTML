@@ -11,34 +11,46 @@ header {
   top: 0;
   width: 100%;
   z-index: 9;
-  margin: 60px auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
-ul {
+.topnav {
   padding: 0 10px;
   text-align: center;
 }
 
-li {
+.topnav a {
   font-family: 'Fjalla One', sans-serif;
   font-size: 16px;
   font-weight: 300;
+  color: black;
   text-transform: uppercase;
   display: inline-block;
   width: 80px;
   margin: 20px;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
-li a:hover {
+.topnav a:hover {
   font-weight: bold;
   font-size: 18px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.top-logo {
+  position: fixed;
+  width: 180px;
+  top: 0;
+  padding-top: 6px;
+  margin: 0 auto;
+  display: inline-block;
+  z-index: 10;
+}
+
+#space {
+  padding-right: 0;
+  margin-right: 0;
 }
 
 
@@ -56,9 +68,6 @@ footer {
   padding: 20px;
 }
 
-div {
-}
-
 h1 {
   text-transform: uppercase;
   color: #000;
@@ -70,6 +79,7 @@ img {
   z-image: 10;
 }
 
+/*
 .logo {
   font-family: 'Shrikhand', cursive;
   background-color: #FFF;
@@ -81,22 +91,10 @@ img {
   height: 150px;
   z-index: 9;
   position: fixed;
-  display: block;
   margin: 0 auto;
-}
+}*/
 
-.center {
-  position: fixed;
-  width: 250px;
-  height: 125px;
-  top: 66px;
-  left: 50%;
-  margin-left: -125px;
-}
 
-.space {
-  width: 300px;
-}
 
 .omOss {
 
@@ -106,6 +104,7 @@ img {
   background-image: url("./images/notebooksmaller.png");
   background-repeat: no-repeat;
   background-position: center;
+  transform: rotate(8deg); /* Rotates the entire block with the text */
   width: 100%;
   height: 1000px;
   margin: 0 auto;
@@ -116,7 +115,7 @@ img {
 
 .tjanster-test h1 {
   padding-top: 230px;
-  transform: rotate(-9deg);
+  transform: rotate(-9deg); /* Dont change here, change degrees of .tjanster-test instead */
   font-family: 'Indie Flower', cursive;
 }
 
@@ -125,7 +124,7 @@ img {
   width: 500px;
   margin: 0 auto;
   display: block;
-  transform: rotate(-9deg);
+  transform: rotate(-9deg); /* Dont change here, change degrees of .tjanster-test instead */
 }
 
 .eraser {
@@ -148,7 +147,7 @@ img {
 .test {
   text-align: center;
   width: 700px;
-  padding: 200px 50px 700px 50px;
+  padding: 150px 50px 150px 50px;
   margin: 0 auto;
   font-family: 'Arial', Helvetica, sans-serif;
   letter-spacing: 1.5px;
