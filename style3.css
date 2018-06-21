@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #FFF;
+  background-color: hsla(0, 0%, 100%, 0.87);
   position: fixed;
   top: 0;
   width: 100%;
@@ -137,15 +137,6 @@ article {
   display: block;
   transform: rotate(-9deg); /* Dont change here, change degrees of .tjanster-test instead */
 }
-
-/*
-.eraser {
-  display: block;
-  width: 120px;
-  margin: 0 auto;
-  position: relative;
-  left: 300px;
-}*/
 
 
 .portfolio {
