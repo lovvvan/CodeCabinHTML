@@ -56,12 +56,12 @@ header {
 
 footer {
   background-color: #FFF;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Shrikhand', 'Fjalla One', sans-serif;
   font-size: 15px;
   color: #ffb399; 
   background-color: hsla(21, 20%, 12%, 1);
   border-top: 7px solid hsla(21, 20%, 20%, 0.3);
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-align: center;
   bottom: 0;
   width: 100%;
