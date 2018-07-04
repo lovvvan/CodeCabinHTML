@@ -12,36 +12,36 @@ h1 {
   color: white;
   font-weight: 100;
   text-align: center;
+  background-color: transparent;
+  font-size: 45px;
+  text-transform: lowercase;
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  z-index: 9;
+  position: fixed;
+  margin: 0 auto;
 }
 
 h2 {
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 40px;
+  margin: 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: 25px;
+  color: white;
 }
 
 img {
   z-image: 10;
 }
 
-.logo {
-  background-color: transparent;
-  font-size: 45px;
-  text-transform: lowercase;
-  color: white;
-  display: inline-block;
-  width: 300px;
-  height: 150px;
-  z-index: 9;
-  position: fixed;
-  margin: 0 auto;
-}
-
-header {
+nav {
+  text-align: center;
   background-color: transparent;
   color: white;
   position: fixed;
@@ -49,15 +49,9 @@ header {
   width: 100%;
   z-index: 9;
   margin: 0 auto;
-  padding: 20px;
 }
 
-.topnav {
-  padding: 0 20px;
-  text-align: center;
-}
-
-.topnav a {
+nav a {
   font-family: 'Fjalla One', sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -69,9 +63,10 @@ header {
   padding: 0 25px;
   letter-spacing: 2px;
   text-decoration: none;
+
 }
 
-.topnav a:hover {
+nav a:hover {
   font-weight: bold;
 }
 
@@ -90,81 +85,84 @@ header {
   margin-right: 0;
 }
 
-.container {
-  width: 100%;
-  height: 120vh;
-  overflow: hidden;
-
-}
-
-.cottage {
+header {
   z-index: 3;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-image: url(./images/cottage.jpg);
   background-repeat: no-repeat;
-
-
 }
 
 article {
   background-color: transparent;
   text-align: center;
-  max-width: 1000px;
-  padding: 50px 50px 50px 50px;
-  margin: 50px auto;
+  width: 100%;
 }
 
-.tp {
-  background-color: hsla(98, 58%, 20%, 0.14);
-}
 
 .tjanster {
   box-shadow: 0 0;
   background-position: center;
-  margin: 0 auto;
-  background-color: transparent;
-  margin-bottom: 300px;
+  border: 30px solid white;
+  box-sizing: border-box;
+  background-color: rgb(19, 96, 77);
+  padding-bottom: 100px;
+  color: white;
 }
 
 .tjanster h2 {
   margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+  color: white;
 }
 
 .tjanster p {
   max-width: 300px;
   min-width: 300px;
-  margin-top: 20px;
+}
+
+.tjanstbox {
+  margin: 0 auto;
+  position: relative;
 }
 
 .flexibla {
-  float: left;
   max-width: 300px;
+  position: relative;
   display: inline-block;
+  right: 50px;
+  bottom: 22px;
 }
 
 .kundfokus {
   max-width: 300px;
-  float: left;
+  position: relative;
   display: inline-block;
-  margin-left: 50px;
-  margin-right: 50px;
+  bottom: 70px;
 }
 
 .prisvarda {
   max-width: 300px;
-  float: left;
+  position: relative;
   display: inline-block;
+  left: 50px;
+  bottom: 70px;
 }
 
 .portfolio {
-  margin-top: 400px;
   padding-bottom: 400px;
   background-color: transparent;
-  margin: 0 auto;
+  margin: 100px auto;
   text-align: center;
+}
+
+.portfolio h2 {
+  color: black;
+}
+
+.portfolio p {
+  color: black;
 }
 
 
@@ -229,25 +227,22 @@ figure.rotate_left {
     transform: rotate(-8deg);
 }
 
-
-.omoss-kontakt {
-  background: linear-gradient(hsla(98, 58%, 20%, 0.14), white);
-  padding-bottom: 50px;
+.fadecontainer {
+  background: linear-gradient(rgb(19, 96, 77), rgb(19, 96, 77), white);
 }
 
+
 .omOss {
-  margin-top: 200px;
+  margin: 0 auto;
+  padding: 100px 0;
   float: center;
+  max-width: 1000px;
 }
 
 .p-left {
   text-align: left;
   float: left;
   max-width: 600px;
-}
-
-.omoss1 {
-
 }
 
 .p-right {
@@ -269,6 +264,24 @@ figure.rotate_left {
 }
 
 
+.uppsalacontainer {
+ width: 100%;
+ height: 250px;
+}
+
+.uppsalabild {
+  background-image: url(./images/codecabinFot.png);
+  bottom: 0;
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 5;
+}
+
+.kontakt {
+      margin: 80px 0;
+}
 
 footer {
   color: white;
@@ -277,19 +290,22 @@ footer {
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  position: relative;
 }
 
 footer h1 {
   font-size: 30px;
+  position: static;
+  padding-top: 50px;
 }
 
 footer h2 {
   color: white;
+  padding: 50px 0;
 }
 
 footer p {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 }

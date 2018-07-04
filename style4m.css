@@ -12,6 +12,15 @@ h1 {
   color: white;
   font-weight: 100;
   text-align: center;
+  background-color: transparent;
+  font-size: 45px;
+  text-transform: lowercase;
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  z-index: 9;
+  position: fixed;
+  margin: 0 auto;
 }
 
 h2 {
@@ -26,19 +35,6 @@ p {
 
 img {
   z-image: 10;
-}
-
-.logo {
-  background-color: transparent;
-  font-size: 45px;
-  text-transform: lowercase;
-  color: white;
-  display: inline-block;
-  width: 300px;
-  height: 150px;
-  z-index: 9;
-  position: fixed;
-  margin: 0 auto;
 }
 
 header {
@@ -282,6 +278,7 @@ footer {
 
 footer h1 {
   font-size: 30px;
+  position: static;
 }
 
 footer h2 {

@@ -7,7 +7,10 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style4.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" type="text/css" href="style4xs.css">
+  <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" type="text/css" href="style4s.css">
+  <link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1200px)" type="text/css" href="style4m.css">
+  <link rel="stylesheet" media="screen and (min-width: 1201px)" type="text/css" href="style4l.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
@@ -16,7 +19,7 @@
         $("a").on('click', function(event) {
 
           // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
+          if (this.hash !== "") 
             // Prevent default anchor click behavior
             event.preventDefault();
 
@@ -49,28 +52,23 @@
 </head>
 <body>
 
-
   <header>
-    <nav class="topnav">
-        <a href="#omOss">om oss</a>
-        <a href="#tjanster">tjänster</a>
-        <h1 class="logo">code cabin</h1>
-        <a href="#" id="space" class="space"><a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#kontakt">kontakt</a>
-    </nav>
   </header>
 
+  <nav>
+    <a href="#omOss">om oss</a>
+    <a href="#tjanster">tjänster</a>
+    <h1>code cabin</h1>
+    <a href="#" id="space" class="space"><a>
+    <a href="#portfolio">portfolio</a>
+    <a href="#kontakt">kontakt</a>
+  </nav>
 
-  <div class="container">
-   <div class="cottage"> </div>
-  </div>
-
-  <div class="tp">
-
-    <article class="tjanster" id="tjanster">
-      <h2> Flexibla hemsidor uppbyggda från grunden </h2>
-      <p class="flexibla">
+  <!-- Tjänster -->
+  <article class="tjanster" id="tjanster">
+    <h2> Flexibla hemsidor uppbyggda från grunden </h2>
+    <div class="tjanstbox">
+        <p class="flexibla">
         Genom vår ambition och kärlek till webdesign och kod skräddarsyr vi er hemsida från grunden. Vi gör så att den blir anpassad för både datorskärmar och mobila enheter.
       </p>
       <p class="kundfokus">
@@ -79,52 +77,58 @@
       <p class="prisvarda">
         Eftersom att vi är nya i branchen och gör detta för att vi vill lära oss så är vårat pris betydligt billigare än konkurrenter.
       </p>
+    </div>
+  </article>
 
+  <!-- Portfolio -->
+  <article class="portfolio" id="portfolio">
+    <h2>portfolio</h2>
+    <p>Håll ut, mer kommer!</p>
+  </article>
+
+  <!-- Om oss -->
+  <div class="fadecontainer">
+      <article class="omOss" id="omOss">
+        <h2>Vi är Code Cabin</h2>
+
+        <div class="omoss1">
+          <p class="p-left">Passionen för kreativ kodning ligger som grund till produkterna vi skapar. Idén grundades efter en föreläsning på Polacksbacken i slutet av Maj 2018. Att lägga programmering och utbildningen på hyllan under sommaruppehållet kändes ointressant.</p>
+
+          <figure class="polaroid rotate_right">
+            <img src="./images/itkoppenmindre.jpg" alt="IT koppen" width="199.999" height="150">
+            <p class="caption">IT-koppen!! FTW.</p>
+          </figure>
+        </div>
+
+        <div class="omoss2">
+          <figure class="polaroid rotate_left">
+            <img src="./images/uppsalamindre.jpg" alt="Uppsala domkyrka" width="199.999" height="150">
+            <p class="caption">Uppsalas Domkyrka.</p>
+          </figure>
+
+          <p class="p-right">Efter möten med brainstorming, gnutta tveksamhet och konsultation bestämmde vi oss för att skapa Code cabin. Målet är att lära oss utveckla web och skapa unika och proffsiga produkter. Arbetet sker på cafér, i våra studentlyor, på flygplan eller i sommarstugan.</p>
+        </div>
+        
+        <p class="p-center"> Code cabin är din lokala programmerare, som finns där i ur och skur.</p>
+      </article>
+    
+    <!-- Kontakt -->
+    <article class="kontakt" id="kontakt">
+      <h2>Morsing korsning, swipea höger!</h2>
     </article>
+    
 
-    <div class="portfolio" id="portfolio">
-      <h2>portfolio</h2>
-      <div class="centerpics">
-        <div class="pic1"> </div> 
-        <div class="pic2"> </div> 
-        <div class="pic3"> </div> 
-      </div>
+    <div class="uppsalacontainer">
+      <figure class="uppsalabild">
+      </figure>
     </div>
 
+    
   </div>
 
-
-  <div class="omoss-kontakt">
-    <article class="omOss" id="omOss">
-      <h2>Vi är Code Cabin</h2>
-
-      <div class="omoss1">
-        <p class="p-left">Passionen för kreativ kodning ligger som grund till produkterna vi skapar. Idén grundades efter en föreläsning på Polacksbacken i slutet av Maj 2018. Att lägga programmering och utbildningen på hyllan under sommaruppehållet kändes ointressant.</p>
-
-        <figure class="polaroid rotate_right">
-          <img src="./images/itkoppenmindre.jpg" alt="IT koppen" width="199.999" height="150">
-          <p class="caption">IT-koppen!! FTW.</p>
-        </figure>
-      </div>
-
-      <div class="omoss2">
-        <figure class="polaroid rotate_left">
-          <img src="./images/uppsalamindre.jpg" alt="Uppsala domkyrka" width="199.999" height="150">
-          <p class="caption">Uppsalas Domkyrka.</p>
-        </figure>
-
-        <p class="p-right">Efter möten med brainstorming, gnutta tveksamhet och konsultation bestämmde vi oss för att skapa Code cabin. Målet är att lära oss utveckla web och skapa unika och proffsiga produkter. Arbetet sker på cafér, i våra studentlyor, på flygplan eller i sommarstugan.</p>
-      </div>
-      
-      <h3 class="p-center"> Code cabin är din lokala programmerare, som finns där i ur och skur.</h3>
-    </article>
-
-  </div>
-  
-  <footer class="kontakt" id="kontakt">
+  <!-- Fot -->
+  <footer>
     <h1>code cabin</h1>
-    <h2>kontakt</h2>
-    <p>Kontakta oss gärna för mer information angående vilka möjligheter som finns! Vi nås på:</p>
     <p>info@codecabin.se</p>
   </footer>
 
