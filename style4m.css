@@ -1,0 +1,296 @@
+@media (min-width: 901px) and (max-width: 1200px) {
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Arial', Helvetica, sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  z-image: 10;
+}
+
+.logo {
+  background-color: transparent;
+  font-size: 45px;
+  text-transform: lowercase;
+  color: white;
+  display: inline-block;
+  width: 300px;
+  height: 150px;
+  z-index: 9;
+  position: fixed;
+  margin: 0 auto;
+}
+
+header {
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topnav {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.topnav a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 80px;
+  margin: 20px;
+  padding: 0 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  font-weight: bold;
+}
+
+.top-logo {
+  position: fixed;
+  width: 180px;
+  top: 0;
+  padding-top: 6px;
+  margin: 0 auto;
+  display: inline-block;
+  z-index: 10;
+}
+
+#space {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.container {
+  width: 100%;
+  height: 120vh;
+  overflow: hidden;
+
+}
+
+.cottage {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url(./images/cottage.jpg);
+  background-repeat: no-repeat;
+
+
+}
+
+article {
+  background-color: transparent;
+  text-align: center;
+  max-width: 1000px;
+  padding: 50px 50px 50px 50px;
+  margin: 50px auto;
+}
+
+.tp {
+  background-color: hsla(98, 58%, 20%, 0.14);
+}
+
+.tjanster {
+  box-shadow: 0 0;
+  background-position: center;
+  margin: 0 auto;
+  background-color: transparent;
+  margin-bottom: 300px;
+}
+
+.tjanster h2 {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.tjanster p {
+  max-width: 300px;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+.flexibla {
+  float: left;
+  max-width: 300px;
+  display: inline-block;
+}
+
+.kundfokus {
+  max-width: 300px;
+  float: left;
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.prisvarda {
+  max-width: 300px;
+  float: left;
+  display: inline-block;
+}
+
+.portfolio {
+  margin-top: 400px;
+  padding-bottom: 400px;
+  background-color: transparent;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.pic1 {
+  float: left;
+  margin: 50px 50px;
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-image: url(./images/pic1.jpg);
+  background-repeat: no-repeat;
+}
+
+.pic2 {
+  float: left;
+  margin: 50px 50px;
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-image: url(./images/pic2.jpg);
+  background-repeat: no-repeat;
+}
+
+.pic3 {
+  float: left;
+  margin: 50px 50px;
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-image: url(./images/pic3.jpg);
+  background-repeat: no-repeat;
+}
+
+.centerpics {
+  margin: 0 auto;
+}
+
+
+
+figure.polaroid {
+    width: 199.999px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 8px 8px 5px #aaaaaa;
+}
+
+figure.rotate_right {
+    float: right;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+figure.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+
+
+.omoss-kontakt {
+  background: linear-gradient(hsla(98, 58%, 20%, 0.14), white);
+  padding-bottom: 50px;
+}
+
+.omOss {
+  margin-top: 200px;
+  float: center;
+}
+
+.p-left {
+  text-align: left;
+  float: left;
+  max-width: 600px;
+}
+
+.omoss1 {
+
+}
+
+.p-right {
+  text-align: left;
+  float: right;
+  max-width: 600px;
+}
+
+.omoss2 {
+  margin: 0 auto;
+}
+
+.p-center {
+  float: center;
+  text-align: center;
+  min-width: 600px;
+  max-height: 50px;
+  clear: both;
+}
+
+
+
+footer {
+  color: white;
+  background-color: hsla(114, 100%, 1%, 1);
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer h1 {
+  font-size: 30px;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer p {
+  margin-bottom: 50px;
+}
+
+
+}
