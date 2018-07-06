@@ -40,6 +40,14 @@ img {
   z-image: 10;
 }
 
+#topRow {
+  display: none;
+}
+
+#hamburgerNav {
+  display: none;
+}
+
 nav {
   text-align: center;
   background-color: transparent;
@@ -92,6 +100,7 @@ header {
   background-size: cover;
   background-image: url(./images/cottage.jpg);
   background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 article {
@@ -285,7 +294,7 @@ figure.rotate_left {
 
 footer {
   color: white;
-  background-color: hsla(114, 100%, 1%, 1);
+  background-color: black;
   text-align: center;
   bottom: 0;
   width: 100%;
