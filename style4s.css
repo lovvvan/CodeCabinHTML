@@ -124,7 +124,7 @@ img {
   right: 0;
   width: 200px;
   height: 310px;
-  padding: 80px 0 30px 0;
+  padding: 80px 0 0px 0;
   z-index: 7;
   display: none;
 }
