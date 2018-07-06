@@ -99,7 +99,7 @@ img {
   height: 80px;
   position: fixed;
   top: 0;
-  z-index: 9;
+  z-index: 6;
 }
 
 #logga {
@@ -122,9 +122,9 @@ img {
   position: fixed;
   top: 0px;
   right: 0;
-  width: 200px;
+  width: 180px;
   height: 310px;
-  padding: 80px 0 0px 0;
+  padding: 120px 0 0px 0;
   z-index: 7;
   display: none;
 }
@@ -377,7 +377,7 @@ figure.polaroid {
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
     background-color: white;
-    box-shadow: 8px 8px 5px #aaaaaa;
+    box-shadow: 8px 8px 5px hsla(0, 0%, 0%, 0.27);
     z-index: 2;
 }
 
@@ -415,7 +415,7 @@ figure.rotate_left {
   max-width: 600px;
   clear: both;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .p-right {
@@ -423,7 +423,7 @@ figure.rotate_left {
   max-width: 600px;
   clear: both;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .omoss2 {
@@ -434,7 +434,6 @@ figure.rotate_left {
   text-align: center;
   max-height: 50px;
   clear: both;
-  padding: 20px 0;
 }
 
 .kontakt {
