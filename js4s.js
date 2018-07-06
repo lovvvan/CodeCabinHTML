@@ -1,3 +1,6 @@
+'use strict';
+
+
 $(function() {
 
     // The elements that change when scrolling:
