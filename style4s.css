@@ -59,7 +59,6 @@ img {
   bottom: 0;
   right: 0;
   z-index: 4;
-  border: 1px solid red;
 }
 
 
@@ -143,7 +142,6 @@ img {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    border: 1px solid red;
     z-index: 100000;
 }
 
