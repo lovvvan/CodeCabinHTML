@@ -1,0 +1,273 @@
+body {
+  background-image: url("./images/bright-woodseamless-smaller.jpg"); 
+  background-color: #ccffd9;
+  background-repeat: repeat;
+  margin: 0 auto;
+  font-family: 'Varela Round', sans-serif;
+}
+
+header {
+  background-color: hsla(0, 0%, 100%, 0.87);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topnav {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.topnav a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 80px;
+  margin: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.top-logo {
+  position: fixed;
+  width: 180px;
+  top: 0;
+  padding-top: 6px;
+  margin: 0 auto;
+  display: inline-block;
+  z-index: 10;
+}
+
+#space {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+
+footer {
+  background-color: #FFF;
+  font-family: 'Shrikhand', 'Fjalla One', sans-serif;
+  font-size: 15px;
+  color: #ffb399; 
+  background-color: hsla(21, 20%, 12%, 1);
+  border-top: 7px solid hsla(21, 20%, 20%, 0.3);
+  text-transform: lowercase;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 100;
+  text-align: center;
+}
+
+img {
+  z-image: 10;
+}
+
+/*
+.logo {
+  font-family: 'Shrikhand', cursive;
+  background-color: #FFF;
+  font-size: 45px;
+  text-transform: lowercase;
+  color: #ffb399;
+  display: block;
+  width: 300px;
+  height: 150px;
+  z-index: 9;
+  position: fixed;
+  margin: 0 auto;
+}*/
+
+article {
+  background-color: hsla(0, 0%, 99%, 1);
+  box-shadow: 5px 8px 18px hsla(0, 0%, 0%, 0.38);
+  text-align: center;
+  width: 700px;
+  padding: 50px 50px 50px 50px;
+  margin: 50px auto;
+  font-family: 'Arial', Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+div.pictures {
+  width: 800px;
+  margin: 0 auto;
+}
+
+figure.polaroid {
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 8px 8px 5px #aaaaaa;
+}
+
+figure.rotate_right {
+    float: right;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+figure.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+
+
+.omOss {
+  margin-top: 200px;
+}
+
+.tjanster{
+  background-image: url("./images/notebooksmaller.png");
+  background-color: transparent;
+  box-shadow: 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(8deg); /* Rotates the entire block with the text */
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  display: inline-block;
+  font-family: 'Indie Flower', sans-serif;
+  font-size: 22px;
+}
+
+.tjanster h1 {
+  margin-top: 100px;
+  transform: rotate(-9deg); /* Dont change here, change degrees of .tjanster-test instead */
+  font-family: 'Indie Flower', cursive;
+}
+
+.tjanster p {
+  text-align: left;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  transform: rotate(-9deg); /* Dont change here, change degrees of .tjanster-test instead */
+}
+
+
+.portfolio {
+  
+}
+
+.kontakt {
+  
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 200px; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 250px; /* not at the top */
+    left: 0;
+    background-color: hsla(29, 83%, 10%, 0.85); /* darkbrown*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.openbtn {
+    top: 210px;
+    color: hsla(29, 83%, 10%, 0.85);
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 20px;
+    position: fixed;
+
+}
+
+/* When you mouse over the navigation links, change their appearence */
+.sidenav a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#meny {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

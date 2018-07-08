@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>code cabin</title>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style3.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+
+      /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      }
+
+/* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+</head>
+<body>
+
+
+  <header>
+    <nav class="topnav">
+        <a href="#omOss">om oss</a>
+        <a href="#tjanster">tjänster</a>
+        <img class="top-logo" src="images/sunlogo.jpg" alt="Code Cabin">
+        <a href="#" id="space" class="space"><a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#kontakt">kontakt</a>
+    </nav>
+    
+  </header>
+<!--
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#omOss">om oss</a>
+    <a href="#tjanster">tjänster</a>
+    <a href="#portfolio">portfolio</a>
+    <a href="#kontakt">kontakt</a>
+  </nav> 
+
+  <span onmouseover="openNav()" class="openbtn" >Visa meny</span>
+
+-->
+   
+
+  <article class="omOss" id="omOss">
+    <h1>Vi är Code Cabin</h1>
+    <p>Passionen för kreativ kodning ligger som grund till produkterna vi skapar. Idén grundades efter en föreläsning på Polacksbacken i slutet av Maj 2018. Att lägga programmering och utbildningen på hyllan under sommaruppehållet kändes ointressant. Efter möten med brainstorming, gnutta tveksamhet och konsultation bestämmde vi oss för att skapa Code cabin. Målet är att lära oss utveckla web och skapa unika och proffsiga produkter. Arbetet sker på cafér, i våra studentlyor, på flygplan eller i sommarstugan. Code cabin är din lokala programmerare, som finns där i ur och skur.</p>
+  </article>
+
+  <div class="pictures">
+    <figure class="polaroid rotate_left">
+      <img src="./images/uppsalamindre.jpg" alt="Uppsala domkyrka" width="284" height="213">
+      <p class="caption">Uppsalas Domkyrka.</p>
+    </figure>
+
+    <figure class="polaroid rotate_right">
+      <img src="./images/itkoppenmindre.jpg" alt="IT koppen" width="284" height="213">
+      <p class="caption">IT-koppen!! FTW.</p>
+    </figure>
+  </div>
+
+
+  <article class="tjanster" id="tjanster">
+    <h1>tjänster</h1>
+    <p> Genom vår ambition och kärlek till webdesign och kod skräddarsyr vi er hemsida från grunden. Vi gör så att den blir anpassad för både datorskärmar och mobila enheter och så att den blir säker och följer lagar så som GDPR. Genom att välja oss som leverantör får ni ett gäng dedikerade kodare som anstränger sig till max för att göra er så nöjda som möjligt till ett lågt pris! 
+    <br/>
+    <br/>
+    Mejla oss gärna på info@codecabin.se för mer information om vilka möjligheter som finns!</p>
+  </article>
+
+  <article class="portfolio" id="portfolio">
+    <h1>portfolio</h1>
+    <p>Här kommer förhoppnigsvis ett helt galleri fyllt av tidigare arbeten komma fram med tiden!</p>
+  </article>
+
+
+  <article class="kontakt" id="kontakt">
+    <h1>kontakt</h1>
+    <p>Kontakta oss gärna för mer information angående vilka möjligheter som finns! Vi nås på:</p> 
+    <h4>info@codecabin.se</h4> 
+  </article>
+  
+  <footer>
+    code cabin
+  </footer>
+
+</body>
+</html>
