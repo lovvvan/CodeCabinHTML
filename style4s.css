@@ -1,10 +1,63 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
 @media (min-width: 601px) and (max-width: 900px) {
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   width: 100%;
   font-family: 'Varela Round', sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -24,73 +77,199 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 25px;
 }
 
 p {
   font-size: 20px;
+  color: white;
 }
 
 img {
-  z-image: 10;
+  z-image: 6;
 }
 
-header {
-  background-color: transparent;
-  color: white;
+
+#topRow {
+  background-color: hsla(0, 0%, 0%, 0);
+  width: 100%;
+  height: 80px;
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 9;
-  margin: 0 auto;
-  padding: 20px;
 }
 
-.topnav {
-  padding: 0 20px;
+#logga {
+  position: absolute;
+  width: 6em;
+  height: 1em;
+  font-size: 100px;
+  top: 40vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+}
+
+
+#hamburgerNav {
+  box-sizing: border-box;
   text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 200px;
+  height: 310px;
+  padding: 100px 0 0px 0;
+  z-index: 7;
+  display: none;
 }
 
-.topnav a {
+#hamburgerNav a {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   color: white;
   text-transform: uppercase;
   display: inline-block;
   width: 80px;
-  margin: 20px;
+  margin: 10px;
   padding: 0 25px;
   letter-spacing: 2px;
   text-decoration: none;
 }
 
-.topnav a:hover {
+#hamburgerNav a:hover {
   font-weight: bold;
 }
 
-.top-logo {
+
+.navbar {
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.8);
   position: fixed;
-  width: 180px;
-  top: 0;
-  padding-top: 6px;
-  margin: 0 auto;
+  padding-top: 0px;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 250px;
+  z-index: 8;
+  display: none;
+}
+
+.nav h1 {
+  display: none;
+}
+
+.navbar a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
   display: inline-block;
-  z-index: 10;
+  width: 80px;
+  margin: 0;
+  padding: 0 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  font-weight: bold;
 }
 
 #space {
-  padding-right: 0;
-  margin-right: 0;
+  display: none;
+}
+
+.hamburgerContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    z-index: 100000;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 25px;
+    z-index: 9;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*----------------------*/
+/*
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #999;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+  color: black;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10;
+}
+
+*/ 
+
+header {
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(./images/cottage.jpg);
+  background-repeat: no-repeat;
 }
 
 .container {
   width: 100%;
   height: 120vh;
   overflow: hidden;
-
 }
 
 .cottage {
@@ -100,70 +279,56 @@ header {
   background-size: cover;
   background-image: url(./images/cottage.jpg);
   background-repeat: no-repeat;
-
-
+  background-position: center bottom;
 }
 
 article {
+  box-sizing: border-box;
   background-color: transparent;
   text-align: center;
-  max-width: 1000px;
-  padding: 50px 50px 50px 50px;
-  margin: 50px auto;
+  width: 100%;
 }
 
-.tp {
-  background-color: hsla(98, 58%, 20%, 0.14);
-}
 
-.tjanster {
-  box-shadow: 0 0;
-  background-position: center;
-  margin: 0 auto;
-  background-color: transparent;
-  margin-bottom: 300px;
+#tjanster {
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  padding: 80px 50px;
+  margin: 20px auto;
+  background-color: rgb(19, 96, 77);
 }
 
 .tjanster h2 {
-  margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  padding: 0 30px;
 }
 
 .tjanster p {
-  max-width: 300px;
-  min-width: 300px;
-  margin-top: 20px;
+  width: 300px;
+  margin: 50px auto;
 }
 
-.flexibla {
-  float: left;
-  max-width: 300px;
-  display: inline-block;
-}
-
-.kundfokus {
-  max-width: 300px;
-  float: left;
-  display: inline-block;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.prisvarda {
-  max-width: 300px;
-  float: left;
-  display: inline-block;
-}
 
 .portfolio {
+  box-sizing: border-box;
   margin-top: 400px;
-  padding-bottom: 400px;
+  padding: 80px 0;
   background-color: transparent;
   margin: 0 auto;
   text-align: center;
+  color: black;
 }
 
+.portfolio h2 {
+  color: black;
+}
 
+.portfolio p {
+  color: black;
+  padding: 40px;
+}
+
+/*
 .pic1 {
   float: left;
   margin: 50px 50px;
@@ -200,15 +365,20 @@ article {
 .centerpics {
   margin: 0 auto;
 }
+*/
 
 
+figure {
+  z-index: 1;
+}
 
 figure.polaroid {
     width: 199.999px;
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
     background-color: white;
-    box-shadow: 8px 8px 5px #aaaaaa;
+    box-shadow: 8px 8px 5px hsla(0, 0%, 0%, 0.27);
+    z-index: 2;
 }
 
 figure.rotate_right {
@@ -216,6 +386,7 @@ figure.rotate_right {
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Safari */
     transform: rotate(7deg);
+    z-index: 3;
 }
 
 figure.rotate_left {
@@ -223,33 +394,36 @@ figure.rotate_left {
     -ms-transform: rotate(-8deg); /* IE 9 */
     -webkit-transform: rotate(-8deg); /* Safari */
     transform: rotate(-8deg);
+    z-index: 3;
 }
 
 
-.omoss-kontakt {
-  background: linear-gradient(hsla(98, 58%, 20%, 0.14), white);
-  padding-bottom: 50px;
+.fadecontainer {
+  background: linear-gradient(rgb(19, 96, 77), rgb(19, 96, 77), white);
 }
 
 .omOss {
+  box-sizing: border-box;
+  padding: 80px 40px;
   margin-top: 200px;
   float: center;
+  width: 100%;
 }
 
 .p-left {
   text-align: left;
-  float: left;
   max-width: 600px;
-}
-
-.omoss1 {
-
+  clear: both;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .p-right {
   text-align: left;
-  float: right;
   max-width: 600px;
+  clear: both;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .omoss2 {
@@ -257,23 +431,46 @@ figure.rotate_left {
 }
 
 .p-center {
-  float: center;
   text-align: center;
-  min-width: 600px;
   max-height: 50px;
   clear: both;
 }
 
+.kontakt {
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 80px 40px;
+}
+
+
+.uppsalacontainer {
+ width: 100%;
+ height: 250px;
+ position: relative;
+ margin: 0;
+}
+
+.uppsalabild {
+  background-image: url(./images/codecabinFot.png);
+  position: relative;
+  bottom: 0;
+  background-size: cover;
+  background-position: center bottom;
+  margin: 0;
+  width: 100%;
+  height: 260px;
+  z-index: 5;
+}
 
 
 footer {
   color: white;
-  background-color: hsla(114, 100%, 1%, 1);
+  background-color: black;
   text-align: center;
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 footer h1 {

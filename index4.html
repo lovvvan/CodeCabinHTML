@@ -11,51 +11,31 @@
   <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 900px)" type="text/css" href="style4s.css">
   <link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1200px)" type="text/css" href="style4m.css">
   <link rel="stylesheet" media="screen and (min-width: 1201px)" type="text/css" href="style4l.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-      $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") 
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-         
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });
-
-      /* Set the width of the side navigation to 250px */
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      }
-
-/* Set the width of the side navigation to 0 */
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      }
-  </script>
 </head>
 <body>
 
   <header>
   </header>
 
-  <nav>
+
+  <!-- display: none on this div for larger sizes of screens -->
+  <div id="topRow">
+    <h1 id="logga">code cabin</h1>
+    <div class="hamburgerContainer" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+
+  <nav id="hamburgerNav" class="hamburgerNav">
+    <a href="#tjanster">tjänster</a>
+    <a href="#portfolio">portfolio</a>
+    <a href="#omOss">om oss</a>
+    <a href="#kontakt">kontakt</a>
+  </nav>
+
+  <nav id="navbar" class="navbar">
     <a href="#omOss">om oss</a>
     <a href="#tjanster">tjänster</a>
     <h1>code cabin</h1>
@@ -63,6 +43,12 @@
     <a href="#portfolio">portfolio</a>
     <a href="#kontakt">kontakt</a>
   </nav>
+
+<<<<<<< HEAD
+  <p class="koordinater">59°50'28.9"N 17°38'53.3"E</p>
+=======
+
+>>>>>>> 1527465d5718629672d1841f4d7e047d116a7d8c
 
   <!-- Tjänster -->
   <article class="tjanster" id="tjanster">
@@ -131,6 +117,39 @@
     <h1>code cabin</h1>
     <p>info@codecabin.se</p>
   </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") 
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          }); // End if
+        });
+
+
+  </script>
+  <script src="js4s.js"></script>
+
 
 </body>
 </html>
