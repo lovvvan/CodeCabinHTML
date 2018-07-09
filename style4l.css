@@ -343,6 +343,10 @@ figure.rotate_left {
       margin: 80px 0;
 }
 
+.polaroidxs {
+  display: none;
+}
+
 footer {
   color: white;
   background-color: black;
