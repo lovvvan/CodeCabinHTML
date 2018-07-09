@@ -7,7 +7,8 @@ $(function() {
   $(window).scroll(function() {
 
     // Variabel for the change in thickness of the  top logo
-    var mass = Math.max(55, 100-0.25*$(this).scrollTop()) + 'px';
+
+    var mass = Math.max(9, 15-0.026*$(this).scrollTop()) + 'vw';
     console.log(mass);
 
     // variabel for the change in height of the top logo
@@ -24,8 +25,6 @@ $(function() {
     $('#topRow').css({'background-color': backgroundColor});
   });
 });
-
-
 
 
 

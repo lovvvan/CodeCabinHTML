@@ -92,18 +92,18 @@ img {
   z-image: 6;
 }
 
-
+/* menyrad och loggan */
 #topRow {
   background-color: hsla(0, 0%, 0%, 0);
   width: 100%;
-  height: 80px;
+  height: 100px;
   position: fixed;
   top: 0;
   z-index: 9;
 }
 
 #logga {
-  position: absolute;
+  position: fixed;
   width: 6em;
   height: 1em;
   font-size: 100px;
@@ -220,42 +220,8 @@ img {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/*----------------------*/
-/*
-.hamburger {
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 45px;
-  padding: 5px 15px 0px 15px;
-  color: #999;
-  border: 0;
-  font-size: 1.4em;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10;
-  color: black;
-}
 
-.cross{
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  padding:7px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:3em;
-  line-height:65px;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10;
-}
-
-*/ 
+/* backgrundsbild */
 
 header {
   z-index: 3;
@@ -264,23 +230,16 @@ header {
   background-size: cover;
   background-image: url(./images/cottage.jpg);
   background-repeat: no-repeat;
-}
-
-.container {
-  width: 100%;
-  height: 120vh;
-  overflow: hidden;
-}
-
-.cottage {
-  z-index: 3;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-image: url(./images/cottage.jpg);
-  background-repeat: no-repeat;
   background-position: center bottom;
 }
+
+.koordinater{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: white;
+  opacity: 0.7;
+} 
 
 article {
   box-sizing: border-box;
@@ -288,7 +247,6 @@ article {
   text-align: center;
   width: 100%;
 }
-
 
 #tjanster {
   box-sizing: border-box;
@@ -311,7 +269,6 @@ article {
 
 .portfolio {
   box-sizing: border-box;
-  margin-top: 400px;
   padding: 80px 0;
   background-color: transparent;
   margin: 0 auto;
@@ -328,44 +285,6 @@ article {
   padding: 40px;
 }
 
-/*
-.pic1 {
-  float: left;
-  margin: 50px 50px;
-  z-index: 3;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-image: url(./images/pic1.jpg);
-  background-repeat: no-repeat;
-}
-
-.pic2 {
-  float: left;
-  margin: 50px 50px;
-  z-index: 3;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-image: url(./images/pic2.jpg);
-  background-repeat: no-repeat;
-}
-
-.pic3 {
-  float: left;
-  margin: 50px 50px;
-  z-index: 3;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-image: url(./images/pic3.jpg);
-  background-repeat: no-repeat;
-}
-
-.centerpics {
-  margin: 0 auto;
-}
-*/
 
 
 figure {
@@ -397,6 +316,13 @@ figure.rotate_left {
     z-index: 3;
 }
 
+.polaroidxs {
+  display: none;
+}
+
+caption {
+  color: black;
+}
 
 .fadecontainer {
   background: linear-gradient(rgb(19, 96, 77), rgb(19, 96, 77), white);

@@ -57,6 +57,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Varela Round', sans-serif;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -76,30 +77,23 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: white;
   text-transform: uppercase;
   font-family: 'Arial', Helvetica, sans-serif;
+  font-size: 25px;
 }
 
 p {
   font-size: 20px;
+  color: white;
 }
 
 img {
-  z-image: 10;
+  z-image: 6;
 }
 
-header {
-  background-color: transparent;
-  color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9;
-  margin: 0 auto;
-  padding: 20px;
-}
 
+/* menyrad och loggan */
 .topnav {
   padding: 0 20px;
   text-align: center;
@@ -138,122 +132,192 @@ header {
   margin-right: 0;
 }
 
-.container {
+#topRow {
+  background-color: hsla(0, 0%, 0%, 0);
   width: 100%;
-  height: 120vh;
-  overflow: hidden;
-
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
 
-.cottage {
+#logga {
+  width: 6em;
+  height: 1em;
+  top: 40vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+}
+
+
+#hamburgerNav {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 200px;
+  height: 310px;
+  padding: 100px 0 0px 0;
+  z-index: 7;
+  display: none;
+}
+
+#hamburgerNav a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 80px;
+  margin: 10px;
+  padding: 0 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+#hamburgerNav a:hover {
+  font-weight: bold;
+}
+
+
+.navbar {
+  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  position: fixed;
+  padding-top: 0px;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 250px;
+  z-index: 8;
+  display: none;
+}
+
+.nav h1 {
+  display: none;
+}
+
+.navbar a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 80px;
+  margin: 0;
+  padding: 0 25px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
+
+#space {
+  display: none;
+}
+
+.hamburgerContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    z-index: 100000;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 80%;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 25px;
+    z-index: 9;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* backgrundsbild och hemsidan*/
+header {
   z-index: 3;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-image: url(./images/cottage.jpg);
   background-repeat: no-repeat;
-
-
+  background-position: center bottom;
 }
+
+.koordinater{
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  color: white;
+  opacity: 0.7;
+} 
 
 article {
+  box-sizing: border-box;
   background-color: transparent;
   text-align: center;
-  max-width: 1000px;
-  padding: 50px 50px 50px 50px;
-  margin: 50px auto;
+  width: 100%;
 }
 
-.tp {
-  background-color: hsla(98, 58%, 20%, 0.14);
-}
-
-.tjanster {
-  box-shadow: 0 0;
-  background-position: center;
-  margin: 0 auto;
-  background-color: transparent;
-  margin-bottom: 300px;
+#tjanster {
+  box-sizing: border-box;
+  width: calc(100% - 30px);
+  padding: 80px 0;
+  margin: 20px auto;
+  background-color: rgb(19, 96, 77);
 }
 
 .tjanster h2 {
-  margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .tjanster p {
-  max-width: 300px;
-  min-width: 300px;
-  margin-top: 20px;
-}
-
-.flexibla {
-  float: left;
-  max-width: 300px;
-  display: inline-block;
-}
-
-.kundfokus {
-  max-width: 300px;
-  float: left;
-  display: inline-block;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.prisvarda {
-  max-width: 300px;
-  float: left;
-  display: inline-block;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .portfolio {
-  margin-top: 400px;
-  padding-bottom: 400px;
   background-color: transparent;
   margin: 0 auto;
   text-align: center;
 }
 
+.portfolio h2 {
+  color: black;
 
-.pic1 {
-  float: left;
-  margin: 50px 50px;
-  z-index: 3;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-image: url(./images/pic1.jpg);
-  background-repeat: no-repeat;
 }
 
-.pic2 {
-  float: left;
-  margin: 50px 50px;
-  z-index: 3;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-image: url(./images/pic2.jpg);
-  background-repeat: no-repeat;
+.portfolio p {
+  color: black;
+  padding: 30px;
 }
-
-.pic3 {
-  float: left;
-  margin: 50px 50px;
-  z-index: 3;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  background-image: url(./images/pic3.jpg);
-  background-repeat: no-repeat;
-}
-
-.centerpics {
-  margin: 0 auto;
-}
-
-
 
 figure.polaroid {
     width: 199.999px;
@@ -261,61 +325,65 @@ figure.polaroid {
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 8px 8px 5px #aaaaaa;
+    margin: 0 auto;
+    display: none;
 }
 
-figure.rotate_right {
-    float: right;
-    -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Safari */
-    transform: rotate(7deg);
-}
-
-figure.rotate_left {
-    float: left;
-    -ms-transform: rotate(-8deg); /* IE 9 */
-    -webkit-transform: rotate(-8deg); /* Safari */
-    transform: rotate(-8deg);
-}
-
-
-.omoss-kontakt {
-  background: linear-gradient(hsla(98, 58%, 20%, 0.14), white);
-  padding-bottom: 50px;
+.fadecontainer {
+  background: linear-gradient(rgb(19, 96, 77), rgb(19, 96, 77), white);
 }
 
 .omOss {
   margin-top: 200px;
-  float: center;
+  padding: 30px;
 }
 
-.p-left {
-  text-align: left;
-  float: left;
-  max-width: 600px;
-}
-
-.omoss1 {
-
-}
-
-.p-right {
-  text-align: left;
-  float: right;
-  max-width: 600px;
-}
-
-.omoss2 {
-  margin: 0 auto;
-}
-
-.p-center {
-  float: center;
+.omOss p {
   text-align: center;
-  min-width: 600px;
-  max-height: 50px;
-  clear: both;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
+.polaroidxs {
+    width: 199.999px;
+    padding: 10px 10px 15px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 8px 8px 5px hsla(0, 0%, 0%, 0.27);
+    margin: 20px auto;
+
+}
+
+caption {
+  color: black;
+}
+
+.kontakt {
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 80px 40px;
+}
+
+
+.uppsalacontainer {
+ width: 100%;
+ height: 250px;
+ position: relative;
+ margin: 0;
+}
+
+.uppsalabild {
+  background-image: url(./images/codecabinFot.png);
+  position: relative;
+  bottom: 0;
+  background-size: cover;
+  background-position: center bottom;
+  margin: 0;
+  width: 100%;
+  height: 260px;
+  z-index: 5;
+}
 
 
 footer {
@@ -325,7 +393,7 @@ footer {
   bottom: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 footer h1 {
