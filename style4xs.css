@@ -257,6 +257,9 @@ img {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.koordinater {
+  display: none;
+}
 
 /* backgrundsbild och hemsidan*/
 header {
