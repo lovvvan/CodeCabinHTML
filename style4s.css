@@ -336,15 +336,7 @@ caption {
   width: 100%;
 }
 
-.p-left {
-  text-align: left;
-  max-width: 600px;
-  clear: both;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-.p-right {
+.omOss p {
   text-align: left;
   max-width: 600px;
   clear: both;
