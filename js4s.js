@@ -23,6 +23,8 @@ $(function() {
     $('#logga').css({'font-size': mass, 'line-height': mass, 'top': heightOfLogo});
 
     $('#topRow').css({'background-color': backgroundColor});
+    $('#navbar').css({'background-color': backgroundColor});
+
   });
 });
 
