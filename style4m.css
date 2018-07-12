@@ -98,6 +98,8 @@ img {
   display: none;
 }
 
+
+
 nav {
   text-align: center;
   background-color: transparent;
@@ -136,6 +138,10 @@ nav a:hover {
   margin: 0 auto;
   display: inline-block;
   z-index: 10;
+}
+
+nav h1 {
+  padding-top: 10px;
 }
 
 .koordinater {

@@ -129,6 +129,10 @@ nav a:hover {
   font-weight: bold;
 }
 
+nav h1 {
+  padding-top: 10px;
+}
+
 .top-logo {
   position: fixed;
   width: 180px;
